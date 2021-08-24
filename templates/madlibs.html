@@ -7,4 +7,15 @@
 
 <h1>Mad Libs!</h1>
 
+<form action="/story">
+
+{% for ele in my_words %}
+<div>
+<input type="text" name="{{ele}}" placeholder={{ele}}>
+</div>
+{% endfor %}
+
+<button>Submit</button>    
+</form>
+
 {% endblock %}
